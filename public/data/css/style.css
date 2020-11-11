@@ -28,6 +28,31 @@ body {
     width: 100%;
     height: calc(100% - 40px);
     overflow: auto;
+    scroll-behavior: smooth;
+}
+
+/* width */
+
+.come-message::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+.come-message::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.come-message::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+.come-message::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 #message {
@@ -43,6 +68,7 @@ body {
 .submit-btn {
     height: 40px;
     float: right;
+    border-radius: 0;
     width: 40px;
     background-color: #0074D9;
     outline: none;
